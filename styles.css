@@ -1,0 +1,146 @@
+body,html{
+    background-color: black;
+    overflow-x:hidden !important;
+    max-width: 100%;
+}
+.navbar-brand img{
+    width: 30%;
+}
+.navbar{
+    z-index:2;
+    background-color: black;
+}
+
+#front-page{
+    height: 100vh;
+}
+
+#front-page video{
+    z-index:-1;
+    /* height: 100%; */
+    object-fit: cover;
+    position: absolute;
+}
+
+
+#front-page h1{
+    font-size: 6rem;
+}
+
+
+#front-page .title-section{
+    padding: 4%;
+    position: relative;
+}
+
+#front-page .btn1{
+    background-color:  rgb(20, 241, 149);
+    padding: 0.5rem 0.8rem;
+    transition: all 0.2s;
+}
+#front-page .btn2{
+    transition: all 0.2s;
+    background:transparent;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid white;
+}
+
+#front-page .btn1:hover,.btn2:hover{
+    transform: translateY(-5px);
+    /* padding-bottom: 1.3rem; */
+}
+
+
+#front-page .btn1:hover{
+    background-color: white;
+    /* color: white; */
+}
+#front-page .btn2:hover{
+    background-color: white;
+    color: black;
+}
+
+.amount-section{
+    padding: 3rem;
+    background-color:  rgb(20, 241, 149);
+}
+
+#front-page p{
+    font-size: 1.5rem;
+
+}
+
+nav{
+    position: fixed;
+    top:0
+}
+
+
+#info h1{
+    font-size: 5rem !important;
+}
+
+#info h2{
+    font-size: 3rem !important;
+}
+
+
+.card{
+    background: #232325;
+    border-radius: 10px;
+}
+
+#cards h1{
+    font-size: 4rem;
+}
+
+
+.bottom-div{
+    left: 25%;
+}
+@media only screen and (max-width:1000px){
+    #front-page h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #front-page{
+        height: 100vh;
+    }
+    #front-page p{
+        text-align: center;
+        font-size: 0.7rem;
+        }
+    #front-page video{
+        left:50%;
+        top:70%;
+        transform: translate(-50%, -50%);
+        scale: 2;
+    }
+    .title-section{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, 50%);
+        width: 100%;
+        
+    }
+    #front-page .container-fluid{
+        padding:0;
+    }
+    .scale{
+        width: 100% !important;
+        padding: 0 3rem;
+    }
+
+    #info h1{
+        font-size: 3rem !important;
+    }
+
+    #info h2{
+        font-size: 2rem !important;
+    }
+    .bottom-div{
+        width: 100% !important;
+        left: 0;
+    }
+}
